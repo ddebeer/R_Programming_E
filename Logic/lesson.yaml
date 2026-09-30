@@ -130,8 +130,7 @@
   Hint: "Just to illustrate how the AND operator works type: FALSE & FALSE"
 
 - Class: cmd_question
-  Output: "You can use the `&` operator to evaluate AND across a vector. The `&&` version of AND only evaluates
-    the first member of a vector. Let's test both for practice. Type the expression TRUE & c(TRUE, FALSE, FALSE)."
+  Output: "You can use the `&` operator to evaluate AND across a vector. The `&&` version of AND only work with vectors that have only one element (i.e., the lenght of the vector is one). Let's test both for practice. Type the expression TRUE & c(TRUE, FALSE, FALSE)."
   CorrectAnswer: "TRUE & c(TRUE, FALSE, FALSE)"
   AnswerTests: omnitest(correctExpr='TRUE & c(TRUE, FALSE, FALSE)')
   Hint: "Now to see how the AND operator works with a vector, type:
